@@ -149,7 +149,6 @@ main{
 
 }
 .summary{
-  background-color: red;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -157,15 +156,20 @@ main{
   gap: 15px;
 }
 .summary>div{
-  background-color: blue;
   width: 73%;
   display: flex;
   justify-content: space-between;
   padding: 18px 20px;
   border-radius: 8px;
 }
+.text-ic{
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  justify-content: center;
+}
 
-.summary>button{
+button{
   background-color: gray;
   width: 83%;
 
