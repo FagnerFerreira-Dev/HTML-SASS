@@ -51,10 +51,10 @@ The designs were created to the following widths:
 :root {
 /* Colors */
 
-    --Light-red: hsl(0, 100%, 67%);
-    --Orangey-yellow: hsl(39, 100%, 56%);
-    --Green-teal: hsl(166, 100%, 37%);
-    --Cobaltblue: hsl(234, 85%, 45%);
+    --Light-red: hsla(0, 100%, 67%, 0.075);
+    --Orangey-yellow: hsla(39, 100%, 56%, 0.068);
+    --Green-teal: hsla(166, 100%, 37%, 0.048);
+    --Cobaltblue: hsla(234, 85%, 45%, 0.068);
 
     /* ## Gradients */
 
@@ -91,6 +91,7 @@ main{
   justify-content: center;
   flex-direction: column;
   font-family: var(--Family);
+  margin-bottom: 25px;
 }
 .head{
   color: var(--White);
@@ -161,7 +162,10 @@ main{
   justify-content: space-between;
   padding: 18px 20px;
   border-radius: 8px;
+  font-weight: bold;
+  font-size: 1.1em;
 }
+
 .text-ic{
   display: flex;
   align-items: center;
@@ -169,11 +173,46 @@ main{
   justify-content: center;
 }
 
+.num{
+  opacity: 0.5;
+}
+.txt1{
+  color: hsl(357, 64%, 68%);
+}
+.txt2{
+  color: hsl(44, 93%, 52%);
+}
+
+.txt3{
+color: hsl(167, 38%, 57%);
+}
+
+.txt4{
+  color: hsl(234, 78%, 47%);
+}
+
+.reaction{
+  background-color: var(--Light-red);
+
+}
+.memory{
+  background-color: var(--Orangey-yellow);
+}
+
+.verbal{
+  background-color: var(--Green-teal);
+}
+
+.visual{
+ background-color: var(--Cobaltblue);
+}
+
 button{
+  margin-top: 10px;
   background-color: gray;
   width: 83%;
 
-  padding: 18px 20px;
+  padding: 15px 20px;
   border-radius: 50px;
   border: none;
   color: white;
