@@ -1,0 +1,182 @@
+html, body, div, span, applet, object, iframe,h1, h2, h3, h4, h5, h6, p, 
+    blockquote, pre,a, abbr, acronym, address, big, cite, code,del, dfn, em, 
+    img, ins, kbd, q, s, samp,small, strike, strong, sub, sup, tt, var,b, u, 
+    i, center,dl, dt, dd, ol, ul, li,fieldset, form, label, legend,table, 
+    caption, tbody, tfoot, thead, tr, th, td,article, aside, canvas, details, 
+    embed, figure, figcaption, footer, header, hgroup, menu, nav, output, 
+    ruby, section, summary, time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, footer, header, hgroup, menu, 
+    nav, section {
+  display: block;
+}
+body {
+  line-height: 1;
+}
+ol, ul {
+  list-style: none;
+}
+blockquote, q {
+  quotes: none;
+}
+blockquote:before, blockquote:after,q:before, q:after {
+  content: '';
+  content: none;
+}
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+/* ## Layout
+
+The designs were created to the following widths:
+
+- Mobile: 375px
+- Desktop: 1440px## Layout
+
+The designs were created to the following widths:
+
+- Mobile: 375px
+- Desktop: 1440px */
+
+
+:root {
+/* Colors */
+
+    --Light-red: hsl(0, 100%, 67%);
+    --Orangey-yellow: hsl(39, 100%, 56%);
+    --Green-teal: hsl(166, 100%, 37%);
+    --Cobaltblue: hsl(234, 85%, 45%);
+
+    /* ## Gradients */
+
+    --Light-slate-blue-background: hsl(252, 100%, 67%);
+    --Light-royal-blue-background: hsl(241, 81%, 54%);
+
+    --Violet-blue-circle: hsla(256, 72%, 46%, 1);
+    --Persian-blue-circle: hsla(241, 72%, 46%, 0);
+
+    /* ### Neutral */
+
+    --White: hsl(0, 0%, 100%);
+    --Pale-blue: hsl(221, 100%, 96%);
+    --Light-lavender: hsl(241, 100%, 89%);
+    --Dark-gray-blue: hsl(224, 30%, 27%);
+    --summary-color: rgb(47, 59, 89);
+
+
+/* # Typography */
+
+    /* ### Body Copy */
+
+    --Font-size-p: 18px;
+
+    /* ### Font */
+
+    --Family: "Hanken Grotesk", sans-serif;
+    --Weights: 500, 700, 800;
+
+}
+
+main{
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  font-family: var(--Family);
+}
+.head{
+  color: var(--White);
+  background-color: var(--Violet-blue-circle);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  text-align: center;
+  padding: 35px 20px;
+  gap: 25px;
+  border-radius: 0px 0px 40px 40px;
+
+  background-image: linear-gradient(to bottom, var(--Light-slate-blue-background), var(--Light-royal-blue-background));
+
+}
+.head>p{
+  font-size: 1.2em;
+  font-weight: bolder;
+  color: var(--Light-lavender);
+}
+.head>.circle{
+  background-color: var(--Light-slate-blue-background);
+  border-radius: 50%;
+  padding: 30px 40px;
+  /* background-image: linear-gradient(to bottom, var(--Violet-blue-circle), var(--Light-royal-blue-background)); */
+  background: linear-gradient(to bottom, var(--Violet-blue-circle), rgba(0, 102, 255, 0) 99%)
+  
+}
+.head>.circle>div{
+  font-size: 3em;
+  padding-bottom: 12px;
+  font-weight: bolder;
+}
+.head>.circle>p{
+  color: var(--Light-lavender);
+}
+.header-text>div{
+  margin-bottom: 15px;
+  font-size: 1.3em;
+}
+.header-text>p{
+  font-size: 1em;
+  padding: 0px 10% 0px 10%;
+  color: var(--Light-lavender);
+  font-weight: 500;
+}
+
+/* Summary */
+
+.content>h1{
+  margin: 30px;
+  font-size: 1.3em;
+  font-weight: bolder;
+  color:var(--summary-color)
+
+}
+.summary{
+  background-color: red;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 15px;
+}
+.summary>div{
+  background-color: blue;
+  width: 73%;
+  display: flex;
+  justify-content: space-between;
+  padding: 18px 20px;
+  border-radius: 8px;
+}
+
+.summary>button{
+  background-color: gray;
+  width: 83%;
+
+  padding: 18px 20px;
+  border-radius: 50px;
+  border: none;
+  color: white;
+  font-size: 1.3em;
+  font-weight: bolder;
+
+  background-color: var(--summary-color);
+}
+
+
