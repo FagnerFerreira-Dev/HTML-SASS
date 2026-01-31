@@ -86,12 +86,18 @@ The designs were created to the following widths:
 
 }
 
+body{
+  background-color: hsl(221, 83%, 95%);
+}
+
 main{
   display: flex;
   justify-content: center;
   flex-direction: column;
   font-family: var(--Family);
   margin-bottom: 25px;
+   background-color: var(--White);
+  border-radius: 50px;
 }
 .head{
   color: var(--White);
@@ -141,6 +147,10 @@ main{
 }
 
 /* Summary */
+
+.content{
+ 
+}
 
 .content>h1{
   margin: 30px;
