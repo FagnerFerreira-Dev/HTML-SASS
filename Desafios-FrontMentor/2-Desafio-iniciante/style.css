@@ -13,7 +13,19 @@ img{
     width: 100%;
     border-top-left-radius: 10px;
     border-top-right-radius: 10px;
+    position: relative;
     
+}
+
+.camada-roxa{
+    width: 500px;
+    height: 367px;
+    position: absolute;
+    background-color: rgba(114, 23, 150, 0.452);
+    z-index: 1;
+
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
 }
 
 
@@ -78,6 +90,7 @@ p{
 }
 
 
+
 @media (min-width: 1440px){
     body{
         display: flex;
@@ -97,6 +110,15 @@ p{
         border-top-left-radius: 0px;
         border-bottom-right-radius: 10px;
     }
+    .camada-roxa{
+        width: 511px;
+        height: 426px;
+        position: absolute;
+        background-color: rgba(114, 23, 150, 0.452);
+        z-index: 1;
+        border-bottom-right-radius: 10px;
+        border-top-right-radius: 10px;
+}
     h1{
         text-align: start;
         font-size: 2.5em;
@@ -125,3 +147,5 @@ p{
         gap: 65px;
     }
 }
+
+
