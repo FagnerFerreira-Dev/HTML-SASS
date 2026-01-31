@@ -1,0 +1,79 @@
+:root{
+    --font1: "Inter", sans-serif;
+    --font2: "Hanken Grotesk", sans-serif;
+}
+
+body{
+    height: 100vh;
+    background-color: hsl(233, 47%, 7%);
+
+}
+
+img{
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+    
+}
+
+
+main{ 
+    display: flex;
+    flex-direction: column;
+    background-color: red;
+    border-radius: 10px;
+    margin: auto;
+    margin-top: 80px;
+    width: 90%;
+    max-width: 500px;
+    background-color: hsl(246, 38%, 16%);
+    color: white;
+}
+
+.content{
+    padding: 20px;
+}
+h1{
+    font-size: 1.8em;
+    padding-inline: ;
+    /* padding-top: 20px; */
+    font-family: var(--font1);
+    font-weight: 500;
+    /* background-color: red; */
+    padding-inline: 5px ;
+    text-align: center;
+}
+h1>strong{
+    color: rgb(158, 97, 199);
+}
+
+p{
+    text-align: center;
+    font-family: var(--font2);
+    color: rgb(154, 152, 173);
+    padding-inline: 10px;
+    line-height: 1.5;
+}
+
+.values{
+    margin: auto;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    text-align: center;
+    gap: 35px;
+    padding: 25px 20px ;
+}
+.num{
+    font-size: 1.5em;
+    font-family: var(--font1);
+    font-weight: 600;
+}
+.txt-value{
+    color: rgb(154, 152, 173);
+    font-family: var(--font1);
+    text-transform: uppercase;
+    font-size: .8em;
+    padding-top: 10px;
+}

@@ -24,7 +24,7 @@ The designs were created to the following widths:
 - White (stat headings): hsla(0, 0%, 100%, 0.6)
 
 ## Typography
-
+ 
 ### Body Copy
 
 - Font size: 15px
