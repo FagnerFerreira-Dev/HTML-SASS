@@ -1,9 +1,11 @@
 @media (min-width: 768px) and (max-width: 1439px) {
+    body{
+        background-color: white;
+    }
     .content{
+        padding-top: 50px;
         width: 600px;
         margin: auto;
-        background-color: red;
-    
     }
 }
 
@@ -50,7 +52,6 @@
         margin: 30px;
     }
     .summary{
-        /* background-color: rgb(197, 197, 197); */;
         margin: auto;
     }
     .summary>div{
@@ -59,6 +60,6 @@
     }
     button{
         margin-top: 20px;
-        padding: 10px;
+        padding: 15px;
     }
 }
