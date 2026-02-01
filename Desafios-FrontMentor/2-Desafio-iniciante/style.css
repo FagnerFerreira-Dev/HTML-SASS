@@ -13,13 +13,14 @@ img{
     width: 100%;
     border-top-left-radius: 10px;
     border-top-right-radius: 10px;
+}
+.foto{
     position: relative;
-    
 }
 
 .camada-roxa{
-    width: 500px;
-    height: 367px;
+    height: 98.9%;
+    width: 100%;
     position: absolute;
     background-color: rgba(114, 23, 150, 0.452);
     z-index: 1;
