@@ -1,0 +1,159 @@
+@font-face {
+    font-family: 'font-italic'; 
+    src: url('assets/fonts/DMSans-Italic-VariableFont_opsz\,wght.ttf');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'font-normal'; /* Nome que você vai usar */
+    src: url('assets/fonts/DMSans-VariableFont_opsz\,wght.ttf'); 
+    font-weight: normal;
+    font-style: normal;
+}
+
+p{
+    font-family: 'font-normal';
+}
+
+
+
+main{
+    margin: auto;
+    display: grid;
+    grid-template-columns: auto;
+    gap: 30px;
+    padding: 30px 10px;
+    max-width: 500px;
+    
+}
+
+img{
+    width: 100%;
+}
+.card{
+    border-radius: 10px;
+    padding: 20px;
+    box-shadow: 0px -1px 13px 11px rgba(0, 0, 0, 0.055);
+}
+.card{
+    font-family: 'font-normal';
+}
+
+.card1{
+    background-color: hsl(256, 67%, 59%);
+    padding: 10px;
+    
+}
+.card1>.title-card1{
+    font-size: 2.5em;
+    /* background-color: red; */
+    padding: 20px 17px;
+    color: white;
+    font-family: "font-normal";
+    text-align: center;
+    line-height: .9;
+}
+.card1>.title-card1>strong{
+    font-weight: normal;
+}
+
+.dezx{
+    color:  hsl(41, 99%, 69%);
+}
+.faster{
+    color: white;
+    font-family: 'font-italic';
+}
+
+
+.card1>img{
+    width: 60%;
+    /* background-color: red; */
+    margin: 0px 22%;
+    /* background-color: red; */
+}
+
+.card1>p{
+    text-align: center;
+    width: 100%;
+    color: rgba(255, 255, 255, 0.836);
+    font-size: 1em;
+    /* background-color: red; */
+    margin-top: 1px;
+}
+
+
+.card2{
+
+    padding: 10px 15px;
+}
+
+.card2>.title-card2{
+    font-size: 1.3em;
+    font-weight: bold;
+    font-family: 'font-normal';
+    margin-top: 10px;
+}
+
+.card3{
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+.card3>.title-card3{
+    font-size: 1.3em;
+    width: 80%;
+    font-weight: bold;
+}
+
+.card4{
+    display: flex;
+    flex-direction: column;
+    background-color: hsl(253, 100%, 92%);
+    gap: 15px;
+    text-align: center;
+}
+.card4>.title-card4{
+    font-size: 1.3em;
+    text-align: center;
+}
+
+.card5{
+    background-color: hsl(256, 67%, 59%);
+    padding: 20px 15%;
+}
+.card5>.title-card5{
+    font-size: 1.5em;
+    text-align: center;
+    color: white;
+    line-height: 1;
+    margin-top: 30px;
+}
+.card5{
+    
+}
+.card6>.title-card6{
+    font-size: 2.5em;
+    font-weight: bold;
+}
+
+.card6>img{
+    width: 65%;
+    /* background-color: red; */
+}
+
+.card7{
+    background-color: hsl(30, 71%, 93%);
+    padding: 25px;
+}
+
+.card7>.title-card7{
+    font-size: 1.8em;
+    font-weight: bold;
+}
+
+.title-card7>strong{
+    font-family: 'font-italic';
+    color: hsl(256, 67%, 59%);
+}
