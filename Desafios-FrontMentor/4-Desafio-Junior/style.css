@@ -100,11 +100,18 @@ img{
     display: flex;
     flex-direction: column;
     gap: 15px;
+    background-color: hsl(40, 100%, 71%);
+    overflow: hidden;
 }
 .card3>.title-card3{
     font-size: 1.3em;
     width: 80%;
     font-weight: bold;
+}
+.card3>img{
+    width: 65%;
+    margin-bottom: -35px;
+
 }
 
 .card4{
@@ -150,10 +157,26 @@ img{
 
 .card7>.title-card7{
     font-size: 1.8em;
-    font-weight: bold;
+    font-weight: 600;
 }
 
 .title-card7>strong{
     font-family: 'font-italic';
     color: hsl(256, 67%, 59%);
+}
+.card7>img{
+    width: 65%;
+    margin-top: 20px;
+}
+.card8{
+    background-color: hsl(40, 100%, 71%);
+}
+.card8>.title-card8{
+    font-size: 1.8em;
+    font-weight: 600;
+}
+
+.card8>img{
+    width: 65%;
+    margin-top: 20px;
 }
