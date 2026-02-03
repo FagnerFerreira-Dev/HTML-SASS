@@ -89,7 +89,7 @@ img{
     padding: 10px 15px;
 }
 
-.card2>.title-card2{
+.title-card2{
     font-size: 1.3em;
     font-weight: bold;
     font-family: 'font-normal';
@@ -231,9 +231,11 @@ img{
         width: 145%;
   
     }
-    .card2.title-card2{
-        padding-right: 50px;
-        font-size: 1.6em;
+    .card2>.title-card2{
+        font-size: 10px;
+        padding-right: 20px;
+        font-size: 1.4em;
+        height: 500;
     }
     .card3{
         grid-area: card3;
@@ -307,7 +309,9 @@ img{
     .card7{
         grid-area: card7;
         padding-top: 70px;
+    
     }
+
     .card7>img{
         width: 90%;
     }
