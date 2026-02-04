@@ -1,3 +1,8 @@
+body{
+    background-color: hsl(0, 0%, 96%);
+}
+
+
 main{
     margin: auto;
     margin-block: 80px;
@@ -14,30 +19,78 @@ main{
 .card{
     background-color: rgb(94, 94, 94);
     border-radius: 15px;
-    padding: 35px;
+    padding: 50px 40px 35px 40px;
+    box-shadow: 1px 1px 20px 12px rgba(0, 0, 0, 0.151);
 }
+
 .perfil{
     display: flex;
     gap: 25px;
     align-items: center;
     margin-bottom: 25px;
 }
+
 .perfil>img{
     border-radius: 50%;
     width: 40px;
 }
+
 .name{
     font-weight: 400;
     font-size: 1.2em;
 }
+
 .verified{
     color: rgba(255, 255, 255, 0.692);
 }
+
 .title{
     font-size: 1.7em;
     font-weight: 500;
 }
+
 p{
-    font-size: 1em;
+    font-size: 1.1em;
     line-height: 1.5;
+    font-weight: 500;
+}
+
+.card1{
+    background-color: hsl(263, 55%, 52%);
+    color: rgba(255, 255, 255, 0.781);
+}
+.card1>.perfil>img{
+    border: solid 2px hsl(264, 82%, 80%);
+}
+
+.card2{
+    background-color: hsl(219, 19%, 35%);
+
+}
+
+.card3, .card5{
+    background-color: white;
+    color: hsla(216, 25%, 22%, 0.877);
+}
+
+.card3>p{
+    color: hsla(216, 25%, 22%, 0.671);
+}
+.card3>.perfil>.perfil-info>.verified{
+    color: hsl(216, 25%, 22%);
+}
+
+.card4{
+    background-color: hsl(222, 29%, 14%);
+    color: rgba(255, 255, 255, 0.884);
+}
+.card4>.perfil>img{
+    border: solid 2px hsl(264, 82%, 80%);
+}
+
+.card5>p{
+    color: hsla(216, 25%, 22%, 0.671);
+}
+.card5>.perfil>.perfil-info>.verified{
+    color: hsla(216, 25%, 22%, 0.623);
 }
