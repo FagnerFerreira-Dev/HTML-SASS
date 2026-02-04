@@ -2,7 +2,6 @@ body{
     background-color: hsl(0, 0%, 96%);
 }
 
-
 main{
     margin: auto;
     margin-block: 80px;
@@ -16,9 +15,10 @@ main{
     font-family: "Barlow Semi Condensed", sans-serif;
 
 }
+
 .card{
     background-color: rgb(94, 94, 94);
-    border-radius: 15px;
+    border-radius: 10px;
     padding: 50px 40px 35px 40px;
     box-shadow: 1px 1px 20px 12px rgba(0, 0, 0, 0.151);
 }
@@ -99,23 +99,28 @@ p{
 
     main{
         grid-template-columns: 270px 270px 270px 270px;
-        grid-template-rows: 270px 270px;
+        grid-template-rows: 295px 295px;
         grid-template-areas: 
         "card1 card1 card2 card5"
         "card3 card4 card4 card5 "
         ;
         margin-top: 200px;
-        gap: 35px;
+        gap: 30px;
 
     }
 
     .card{
-        padding-top: 35px;
+        padding-top: 0px;
         padding-bottom: 0px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        height: 100%;
     }
 
     .perfil{
         margin-bottom: 15px;
+       
     }
     .perfil-info{
         font-size: .7em;
@@ -125,7 +130,7 @@ p{
         width: 30px;
     }
     .title{
-        font-size: 1.2em;
+        font-size: 1.3em;
     }
     p{
         font-size: .8em;
@@ -134,26 +139,36 @@ p{
 
     .card1{
        grid-area: card1;
-       height: 100%;
+       color: white;
+       background-image: url(images/bg-pattern-quotation.svg);
+       background-repeat: no-repeat;
+       background-position: 400px 0px;
+    }
+
+
+    .card1>p{
+        color: rgba(255, 255, 255, 0.616);
     }
     .card2{
         grid-area: card2;
-        height: 100%;
+    }
+    .card2>p{
+        color: rgba(255, 255, 255, 0.616);
     }
     .card3{
         grid-area: card3;
-        height: 100%;
     }
 
     .card4{
         grid-area: card4;
-        height: 100%;
     }
 
     .card5{
         grid-area: card5;
-        height: 100%;
-        
     }
+    .title-card5{
+        font-weight: 600;
+    }
+
 }
 
