@@ -96,7 +96,12 @@ p{
 }
 
 @media (min-width: 1440px){
-
+    body{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 100vh;
+    }
     main{
         grid-template-columns: 270px 270px 270px 270px;
         grid-template-rows: 295px 295px;
@@ -104,7 +109,6 @@ p{
         "card1 card1 card2 card5"
         "card3 card4 card4 card5 "
         ;
-        margin-top: 200px;
         gap: 30px;
 
     }
