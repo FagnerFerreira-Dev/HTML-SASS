@@ -94,3 +94,66 @@ p{
 .card5>.perfil>.perfil-info>.verified{
     color: hsla(216, 25%, 22%, 0.623);
 }
+
+@media (min-width: 1440px){
+
+    main{
+        grid-template-columns: 270px 270px 270px 270px;
+        grid-template-rows: 270px 270px;
+        grid-template-areas: 
+        "card1 card1 card2 card5"
+        "card3 card4 card4 card5 "
+        ;
+        margin-top: 200px;
+        gap: 35px;
+
+    }
+
+    .card{
+        padding-top: 35px;
+        padding-bottom: 0px;
+    }
+
+    .perfil{
+        margin-bottom: 15px;
+    }
+    .perfil-info{
+        font-size: .7em;
+        line-height: 1.5;        
+    }
+    .perfil>img{
+        width: 30px;
+    }
+    .title{
+        font-size: 1.2em;
+    }
+    p{
+        font-size: .8em;
+    }
+
+
+    .card1{
+       grid-area: card1;
+       height: 100%;
+    }
+    .card2{
+        grid-area: card2;
+        height: 100%;
+    }
+    .card3{
+        grid-area: card3;
+        height: 100%;
+    }
+
+    .card4{
+        grid-area: card4;
+        height: 100%;
+    }
+
+    .card5{
+        grid-area: card5;
+        height: 100%;
+        
+    }
+}
+
