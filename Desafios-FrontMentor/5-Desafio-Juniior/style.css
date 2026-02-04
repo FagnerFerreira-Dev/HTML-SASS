@@ -1,0 +1,43 @@
+main{
+    margin: auto;
+    margin-block: 80px;
+    display: grid;
+    justify-content: center;
+    align-items: center;
+    width: 90%;
+    max-width: 400px;
+    gap: 40px;
+    color: white;
+    font-family: "Barlow Semi Condensed", sans-serif;
+
+}
+.card{
+    background-color: rgb(94, 94, 94);
+    border-radius: 15px;
+    padding: 35px;
+}
+.perfil{
+    display: flex;
+    gap: 25px;
+    align-items: center;
+    margin-bottom: 25px;
+}
+.perfil>img{
+    border-radius: 50%;
+    width: 40px;
+}
+.name{
+    font-weight: 400;
+    font-size: 1.2em;
+}
+.verified{
+    color: rgba(255, 255, 255, 0.692);
+}
+.title{
+    font-size: 1.7em;
+    font-weight: 500;
+}
+p{
+    font-size: 1em;
+    line-height: 1.5;
+}
