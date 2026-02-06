@@ -224,4 +224,42 @@ footer>img{
         font-size: 1.5em;
     }
 
+
+    .hero-2{
+    
+    }
+    .hero-2>img{
+        width: 1000px;
+    }
+    .hero-2>p{
+        width: 750px;
+        margin: auto;
+        margin-bottom: 50px;
+    }
+
+    .services-cards{
+        flex-direction: row;
+        margin: auto;
+        justify-content: center;
+
+    }
+    .services-cards>div{
+        width: 400px;
+    }
+    .services-cards>div>p{
+        font-size: 1em;
+    }
+
+    .companies{
+        flex-direction: row;
+        gap: 160px;
+    }
+
+    .hero-5{
+        justify-content: center;
+        align-items: center;
+        width: 750px;
+        margin: auto;
+        margin-bottom: 150px;
+    }
 }
