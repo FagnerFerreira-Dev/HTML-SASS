@@ -1,0 +1,57 @@
+
+body{
+  
+    text-align: center;
+    margin: 0;
+    font-family: "Bai Jamjuree", sans-serif;
+
+}
+
+.btn-download-ios{
+    background-color: hsl(171, 66%, 44%);
+    width: 100%;
+    padding-block: 15px;
+    border-radius: 40px;
+    color: white;
+    font-weight: 500;
+    
+}
+
+.btn-download-ios{
+    text-decoration: none;
+}
+
+
+h1{
+    font-size: 1.9em;
+    color:  hsl(210, 10%, 33%);
+    margin: 0;
+    padding: 0;
+}
+
+p{
+    font-size: 1em;
+    color: hsl(201, 11%, 66%);
+}
+
+img{
+    width: 50%;
+    margin-bottom: 60px;
+}
+header{
+    padding-inline: 34px;
+    background-image: url(images/bg-header-mobile.png);
+    background-position: top;
+    background-repeat: no-repeat;
+    background-size: auto;
+    padding-top: 140px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+
+header>img{
+    width: 120px;
+}
