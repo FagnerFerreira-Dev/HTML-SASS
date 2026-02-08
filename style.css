@@ -8,6 +8,7 @@ header{
     align-items: center;
     background-color: rgb(205, 167, 240);
     padding: 15px;
+    margin-bottom: 100px;
 }
 .links{
     display: flex;
@@ -26,6 +27,9 @@ img{
 }
 
 h1{
+    text-align: center;
+}
+h2{
     text-align: center;
 }
 p{
