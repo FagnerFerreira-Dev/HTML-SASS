@@ -1,0 +1,36 @@
+img{
+    width: 100px;
+}
+
+body{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Rubik", sans-serif;
+    background-color: hsl(270, 20%, 96%);
+}
+
+main{
+    display: flex;
+    /* background-color: red; */
+    margin: auto;
+    width: 80%;
+    gap: 60px;
+    flex-direction: column;
+}
+
+
+
+.title{
+    text-align: center;
+}
+.title>h1{
+    font-size: 2.4em;
+    font-weight: 500;
+    color: hsl(271, 37%, 19%);
+}
+.title>p{
+    font-size: 1em;
+    line-height: 2;
+    color:  hsl(195, 2%, 56%);
+}
