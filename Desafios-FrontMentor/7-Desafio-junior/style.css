@@ -102,7 +102,7 @@ main{
 
 .msg-area{
     background-color: rgb(141, 137, 141);
-    padding: 10px;
+    padding: 10px 5px;
     display: flex;
     flex-direction: column;
     gap: 10px;
@@ -110,8 +110,8 @@ main{
 
 .msg-left{
     background-color: aliceblue;
-    font-size: .7em;
-    max-width: 120px;
+    font-size: .6em;
+    max-width: 110px;
     border-top-left-radius: 10px;
     border-top-right-radius: 10px;
     border-bottom-left-radius: 5px;
@@ -120,6 +120,71 @@ main{
     background-color: hsla(276, 43%, 93%, 0.685);
     color: hsl(276, 55%, 52%);
 }
+.dogs{
+    align-items: center;
+    display: flex;
+    justify-content: end;
+    gap: 10px;
+    margin-top: 6px;
+}
+.dogs>img{
+    border-radius: 6px;
+    width: 40px;
+    height: 40px;
+}
+
+.msg-right{
+
+    align-self: end;
+    background-color: aliceblue;
+    font-size: .6em;
+    max-width: 110px;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 5px;
+    padding: 8px 8px;
+    background-color: white;
+    color: rgba(0, 0, 0, 0.514);
+}
+
+.enquetes{
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+}
+.enquete{
+    background-image: linear-gradient( to bottom, hsl(293, 100%, 63%), hsl(264, 100%, 61%));
+    display: flex;
+    font-size: .8em;
+    align-items: center;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+    border-bottom-left-radius: 5px;
+    border-bottom-right-radius: 10px;
+    color: white;
+    width: 130px;
+    padding-inline: 10px;
+    padding-block: 10px;
+    justify-content: space-between;
+}
+
+.circle{
+    width: 10px;
+    height: 10px;
+    margin-right: 10px;
+    border-radius: 50%;
+    border: solid 1px rgb(241, 175, 230);
+}
+
+.txt{
+    display: flex;
+}
+.value{
+    font-weight: 600;
+    font-size: 1.2em;
+}
+
 
 .title{
     text-align: center;
