@@ -1,5 +1,6 @@
 img{
-    width: 100px;
+    width: 30px;
+    height: 30px;
 }
 
 body{
@@ -17,6 +18,84 @@ main{
     width: 80%;
     gap: 60px;
     flex-direction: column;
+    margin-top: 60px;
+}
+
+.phone{
+    border: 1px solid black;
+    padding: 10px;
+    border-radius: 30px;
+    width: 220px;
+    margin: auto;
+    font-size: .8em
+}
+
+.content{
+    border: 1px solid black;
+    border-radius: 20px;
+    /* padding: 10px; */
+}
+
+.profile{
+    display: flex;
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+    border-bottom-left-radius: 5px;
+    border-bottom-right-radius: 5px;
+    padding: 25px 7px 15px 7px;
+    /* justify-content: center; */
+    align-items: center;
+    gap: 5px;
+    position: relative;
+
+    background-image: linear-gradient( to bottom, hsl(293, 100%, 63%), hsl(264, 100%, 61%));
+}
+
+.barra-white{
+    width: 130px;
+    height: 20px;
+    background-color: white;
+    position: absolute;
+    top: -5px;
+    left: 45px;
+
+    border-bottom-left-radius: 15px;
+    border-bottom-right-radius: 15px;
+}
+.perfil{
+    width: 20px;
+    height: 20px;
+    border: solid 1px white;
+    border-radius: 50%;
+    margin-right: 5px;
+
+}
+.seta{
+    width: 12px;
+    height: 12px;
+    filter: invert(1);
+}
+
+.name-area{
+  display: flex;
+  flex-direction: column;
+  font-size: .7em;
+  margin-right: 65px;
+  gap: 2px;
+}
+.name{
+    color: white;
+    font-size: 1.2em;
+}
+.menu-pontos{
+    width: 10px;
+    height: 10px;
+    filter: invert(1);
+}
+
+.available{
+    color: rgba(255, 255, 255, 0.425);
+    font-size: .8em;
 }
 
 
