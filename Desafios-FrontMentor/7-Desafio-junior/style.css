@@ -9,6 +9,20 @@ body{
     box-sizing: border-box;
     font-family: "Rubik", sans-serif;
     background-color: hsl(270, 20%, 96%);
+    position: relative;
+}
+
+.background{
+    position: absolute;
+    width: 260px;
+    left: -70px;
+    height: 450px;
+    background-color: red;
+    top: -70px;
+    border-bottom-right-radius: 86%;
+
+    background-image: linear-gradient( to bottom, hsl(293, 100%, 63%), hsl(264, 87%, 64%));
+
 }
 
 main{
@@ -24,7 +38,7 @@ main{
 .phone{
     padding: 10px;
     border-radius: 30px;
-    width: 220px;
+    width: 230px;
     margin: auto;
     font-size: .8em;
     position: relative;
