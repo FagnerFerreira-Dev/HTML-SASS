@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+        body{
+            background-color: black;
+        }
+
+        main{
+            margin-top: 30%;
+            display: flex;
+            gap: 50px;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .circle{
+            background-color: white;
+            width: 100px;
+            height: 100px;
+            border-radius: 50%;
+        }
+
+        .circle:hover{
+            cursor: pointer;
+        }
+
+        .circle1{
+            transition: all 500ms ease-out 100ms;
+        }
+        .circle1:hover{
+            transform: translateY(-10px);
+            background-color: rgb(121, 221, 188);
+        }
+
+        .circle2{
+            transition: all 500ms ease-out 100ms;
+        }
+        .circle2:hover{
+            transform: scale(120%);
+            background-color: blue;
+        
+        }
+
+        .circle3{
+            transition: all 1s ease-in-out 100ms;
+        }
+        .circle3:hover{
+            transform: scale(50%);
+            background-color: rgb(121, 221, 126);
+        }
+
+
+
+        .circle4:not(:hover){
+            animation: cicle4 1s ease-in-out reverse ;
+        }
+
+
+        .circle5{
+
+            background-image: linear-gradient(to top, rgb(189, 8, 8), orange);
+            position: relative;
+        }
+        .circle5:hover{
+            animation: circle5 5s linear infinite ;
+            background-color: rgb(121, 221, 126);
+        }
+
+        .circle5::after{
+            width: 50px;
+            height: 50px;
+            border-radius: 50%;
+            position: absolute;
+            background-color: white;
+            content: ".";
+            margin: 25px 25px;
+
+        }
+
+        .circle6{
+            background-color: aqua;
+            animation: circle6 100ms ease-in-out infinite alternate;
+        }
+
+        .circle6:hover{
+            animation-play-state: paused;
+        }
+
+        @keyframes cicle4{
+            0%{
+                
+            }
+            100%{
+                transform: translateY(-100px) scale(150%);
+                background-color: rgb(167, 89, 240);
+            }
+        }
+
+        @keyframes circle5{
+            0%{
+                
+            }
+            100%{
+                transform: rotate(380deg);
+
+            }
+        }
+
+        @keyframes circle6{
+            0%{
+                
+            }
+            100%{
+                transform: skew(10deg, 20deg);
+
+            }
+        }
+        
+        
+     
+
+    </style>
+</head>
+<body>
+    <main>
+        <div class="circle circle1"></div>
+        <div class="circle circle2"></div>
+        <div class="circle circle3"></div>
+        <div class="circle circle4"></div>
+        <div class="circle circle5"></div>
+        <div class="circle circle6"></div>
+    </main>
+</body>
+</html>
