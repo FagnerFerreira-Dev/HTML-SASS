@@ -8,15 +8,16 @@
 
         body{
             display: flex;
+            flex-direction: column;
+            align-items: center;
         }
-        .box-1{
+        /* .box-1{
 
             width: 200px;
             height: 200px;
             border: 10px solid;
             margin-top: 100px;
             margin-left: 100px;
-            /* padding: 10px; */
             display: flex;
             justify-content: center;
             align-items: center;
@@ -39,9 +40,10 @@
             margin-top: 100px;
             margin-left: 100px;
             /* padding: 10px; */
-            display: flex;
+            /* display: flex;
             justify-content: center;
             align-items: center;
+            margin-bottom: 100px;
     
         }
 
@@ -49,9 +51,56 @@
             border-radius: 50%;
             background-color: red;
             height: 100px;
+            width: 100px
+
+        } */ 
+
+        img{
             width: 100px;
+            height: 100px;
+        }
+
+        .img-area2{
+            box-sizing: border-box;
+            overflow-x: scroll;
+            width: 300px;
+            height: 200px;
+            margin: 100px;
+            display: flex;
+            gap: 10px;
+        }
+
+        .img-area3{
+            display: flex;
+            width: 350px;
+            overflow: clip;
+            gap: 10px;
+            margin: 30px;
+        }
+
+        .img-area4{
+            display: flex;
+            width: 350px;
+            /* overflow: clip; */
+            overflow: auto;
+            gap: 10px;
+            margin: 30px;
+        }
+
+        .img-area5{
+            display: flex;
+            width: 350px;
+            /* overflow: clip; */
+            /* overflow: auto; */
+            overflow: visible;
+            background-color: red;
+            padding: 20px;
+            gap: 10px;
+            margin-top: 30px;
+            
 
         }
+
     </style>
 </head>
 <body>
@@ -63,6 +112,39 @@
 
     <div class="box-2">
         <div></div>
+    </div>
+
+
+    <div class="img-area2">
+        <img src="sffsfs.png" alt="">
+        <img src="sffsfs.png" alt="">
+        <img src="sffsfs.png" alt="">
+        <img src="sffsfs.png" alt="">
+        <img src="sffsfs.png" alt="">
+    </div>
+
+    <div class="img-area3">
+        <img src="sffsfs.png" alt="">
+        <img src="sffsfs.png" alt="">
+        <img src="sffsfs.png" alt="">
+        <img src="sffsfs.png" alt="">
+        <img src="sffsfs.png" alt="">
+    </div>
+
+
+    <div class="img-area4">
+        <img src="sffsfs.png" alt="">
+        <img src="sffsfs.png" alt="">
+        <img src="sffsfs.png" alt="">
+        <img src="sffsfs.png" alt="">
+        <img src="sffsfs.png" alt="">
+    </div>
+        <div class="img-area5">
+        <img src="sffsfs.png" alt="">
+        <img src="sffsfs.png" alt="">
+        <img src="sffsfs.png" alt="">
+        <img src="sffsfs.png" alt="">
+        <img src="sffsfs.png" alt="">
     </div>
 </body>
 </html>
