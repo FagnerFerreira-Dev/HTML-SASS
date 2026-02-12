@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .links>div:not(.div4){
+            margin-left: 200px;
+        }
+
+        .links>div:is(div){
+            background-color: red;
+            margin-top: 20px;
+        }
+
+        .links>div:has(img){
+            background-color: purple;
+        }
+        .linkd>div:has(img)>:hover{
+            transform: scaley(100px);
+        }
+        
+        nav:has(h1){
+            background-color: rgb(43, 145, 235);
+        }
+        
+
+        input[type = "email"]{
+            width: 300px;
+            height: 100px;
+            margin-top: 50px
+        }
+
+        input[value^="tem"]{
+            padding: 20px;
+            background-color: blueviolet;
+            color: white;
+        }
+
+        input[value$="fim"]{
+            background-color: aqua;
+            padding: 10%;
+        }
+
+        input[name~="seta-right"]{
+            width: 100px;
+            height: 100px;
+        }
+
+        input[name="seta-left"]{
+            height: 50px;
+            width: 50px;
+        }
+
+        input[id~="estilo1"]{
+            color: white;
+            background-color: black;
+        }
+
+        input[id~="estilo2"]{
+            background-color: brown;
+            color: yellow;
+        }
+
+    </style>
+</head>
+<body>
+    <nav>
+        <h1>seletores avançacado</h1>
+        <p>Entendo seletores css</p>
+    </nav>
+
+    <nav>
+        <div>seletores avançacado</div>
+        <p>Entendo seletores css</p>
+    </nav>
+
+    <nav>
+        <h1>seletores avançacado</h1>
+        <p>Entendo seletores css</p>
+    </nav>
+    <div class="links">
+        <div class="div1"> <a href="#">link1</a></div>
+        <div class="div2"> <a href="#">link2</a></div>
+        <div class="div3"> <a href="#">link3</a></div>
+        <div class="div4"> <a href="#">
+            <img width="100px" src="../animacoes/keyframes-animation/pngwing.com.png" alt="">
+        </a>
+        </div>
+    </div>
+
+
+    <div class="inputs">
+        <input type="button" value="nada-fim">
+        <input type="button" value="tem-algo">
+        <input type="checkbox" name="seta-left" id="sla">
+        <input type="checkbox" name="seta-right" id="sla">
+        <input type="email" name="email" id="email estilo1">
+        <input type="email" name="email" id="email estilo2">
+    </div>
+</body>
+</html>
