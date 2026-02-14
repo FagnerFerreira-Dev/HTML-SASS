@@ -5,19 +5,38 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <style>
+
+
+        main{
+            overflow-x: scroll;
+            /* width: 500px; */
+            margin: auto;
+        }
         table{
+            width: 400px;
             margin: 50px;
             padding: 10px;
             border: 1px solid;
             border-collapse: collapse;
+            
+            table-layout: fixed;
+            overflow-x: scroll;
+           
         }
 
-        td{
+        td, th{
             border: 1px solid;
-            padding: 5px;
+            width: 160px;
+            height: 60px;
+            text-align: center;
+
         }
         caption{
             font-size: 2rem;
+        }
+
+        tbody tr:nth-child(even){
+            background-color: rgba(0, 0, 0, 0.212);
         }
     </style>
 </head>
@@ -26,43 +45,91 @@
 
 
 
-<table>
-    <caption>irmãos</caption>
-    <thead>
-        <tr>
-            <th scope="col">Nome</th>
-            <th scope="col">Sobrenome</th>
-            <th scope="col">Idade</th>
-        </tr>
-    </thead>
-
-    <tbody>
-        <tr>
-            <td>Fagner</td>
-            <td>Ferreira</td>
-            <td>20</td>
-        </tr>
-        <tr>
-            <td>Magno</td>
-            <td>Ferreira</td>
-            <td>32</td>
-        </tr>
-        <tr>
-            <td>Vagner</td>
-            <td>Ferreira</td>
-            <td>30</td>
-        </tr>
-    </tbody>
-
-    <tfoot>
-        <tr>
-            <td colspan="3"> Homens</td>
-        </tr>
-        
-    </tfoot>
-
+<main>
+    <table>
+        <caption>irmãos</caption>
+        <thead>
+            <tr>
+                <th scope="col">Nome</th>
+                <th scope="col">Sobrenome</th>
+                <th scope="col">Idade</th>
+                <th scope="col">Nome</th>
+                <th scope="col">Sobrenome</th>
+                <th scope="col">Idade</th>
+            </tr>
+        </thead>
     
-</table>
+        <tbody>
+            <tr>
+                <td>Fagner</td>
+                <td>Ferreira</td>
+                <td>20</td>
+                <td>Fagner</td>
+                <td>Ferreira</td>
+                <td>20</td>
+            </tr>
+            <tr>
+                <td>Magno</td>
+                <td>Ferreira</td>
+                <td>32</td>
+                <td>Fagner</td>
+                <td>Ferreira</td>
+                <td>20</td>
+            </tr>
+            <tr>
+                <td>Vagner</td>
+                <td>Ferreira</td>
+                <td>30</td>
+                <td>Fagner</td>
+                <td>Ferreira</td>
+                <td>20</td>
+            </tr>
+            <tr>
+                <td>Vagner</td>
+                <td>Ferreira</td>
+                <td>30</td>
+                <td>Fagner</td>
+                <td>Ferreira</td>
+                <td>20</td>
+            </tr>
+            <tr>
+                <td>Vagner</td>
+                <td>Ferreira</td>
+                <td>30</td>
+                <td>Fagner</td>
+                <td>Ferreira</td>
+                <td>20</td>
+            </tr>
+    
+            <tr>
+                <td>Vagner</td>
+                <td>Ferreira</td>
+                <td>30</td>
+                <td>Fagner</td>
+                <td>Ferreira</td>
+                <td>20</td>
+            </tr>
+    
+            <tr>
+                <td>Vagner</td>
+                <td>Ferreira</td>
+                <td>30</td>
+                <td>Fagner</td>
+                <td>Ferreira</td>
+                <td>20</td>
+            </tr>
+        </tbody>
+    
+        <tfoot>
+            <tr>
+                <td colspan="6"> Homens</td>
+            </tr>
+    
+        </tfoot>
+    
+    
+    </table>
+</main>
 
 </body>
 </html>
