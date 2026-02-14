@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        div{
+            height: 100px;
+            width: 100px;
+            margin: 10px;
+            border: solid;
+        }
+
+        .el-1:hover{
+            background-color: red;
+        }
+        .el-2:active{
+            background-color: purple;
+        }
+
+        input[type~="text"]:focus{
+            background-color: red;
+        }
+
+        input[type~="email"]:focus-visible{
+            background-color: red;
+        }
+    </style>
+</head>
+
+<body>
+    <h1>hello worlds</h1>
+
+
+    <div class="el-1"></div>
+    <div class="el-2"></div>
+
+    <input type="text" name="" id="">
+    <input type="email" name="" id="">
+</body>
+</html>
