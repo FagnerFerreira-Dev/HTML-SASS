@@ -10,6 +10,29 @@
     .teste:first-child{
         background-color: red;
     }
+
+    a {
+       position: relative;
+       text-decoration: none;
+    }
+
+    
+
+    a::after {
+        content: "";
+        position: absolute;
+        width: 0;
+        height: 2px;
+        background: red;
+        bottom: 0;
+        left: 0;
+        transition: 0.3s;
+    }
+
+    a:hover::after {
+    width: 100%;
+    }
+
     
 </style>
 <body>
@@ -22,6 +45,8 @@
             <input type="text" name="" id="">
             <input type="email" name="" id="">
         </div>
+
+        <a href="">aaaaaaaaaaaaaaaaaaaaaa</a>
     </main>
 </body>
 </html>
