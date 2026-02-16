@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+
+        h1{
+            position: relative;
+        }
+        h1::after{
+            content: "";
+            height: 3px;
+            left: 1px;
+            top: 32px;
+            width: 160px;
+            background-color: red;
+            position: absolute;
+        }
+
+        .test{
+            position: relative;
+        }
+        .teste::before{
+            content: "";
+            height: 10px;
+            width: 10px;
+            background-color: blue;
+            position: absolute;
+            
+        }
+
+
+        .test2{
+            position: relative;
+        }
+
+        .teste2::first-letter{
+            font-size: 200px;
+        }
+
+        .teste2::selection{
+            background-color: rgb(0, 0, 0);
+            color: white;
+        }
+
+
+        input::placeholder{
+            color: red;
+        }
+    </style>
+</head>
+<body>
+    <main>
+
+        <h1>hello world</h1>
+        <p>AAAAAAAAAAAAAAAA</p>
+
+        <div>
+
+            <p class="p2">Uuuuuuuuuuuuuuuuuuuu</p>
+        </div>
+
+        <div class="teste">
+            <p class="p3">Uuuuuuuuuuuuuuuuuuuu</p>
+        </div>
+        <div>aaaaaaaaaaaaaaa</div>
+    </main>
+
+    <p class="teste2">AAAAAAAAAAAAAAA</p>
+
+    <input type="email" name="" id="" placeholder="Fagner Ferriera">
+</body>
+</html>
