@@ -70,6 +70,36 @@
         grid-area: footer;
     }
 
+
+    .grid-3{
+        display: grid;
+        grid-template-areas: 
+        "header2 header2 header2 header2"
+        ". main-content sidebar2 ."
+        ". twin1 twin2 . "
+        "footer2 footer2 footer2 footer2";
+
+        grid-template-rows: 50px 100px 100px 50px ;
+    }
+
+    .header2{
+        grid-area: header2;
+    }
+    .main-content{
+        grid-area: main-content;
+    }
+    .sidebar2{
+        grid-area: sidebar2;
+    }
+    .twin1{
+        grid-area: twin1;
+    }
+    .twin2{
+        grid-area: twin2;
+    }
+    .footer2{
+        grid-area: footer2;
+    }
 </style>
 <body>
     
@@ -99,6 +129,19 @@
                 <span class="content2">content2</span>
                 <span class="content3">content3</span>
                 <span class="footer">footer</span>
+            </div>
+            
+        </div>
+
+        <div class="container3">
+            Grid 3
+            <div class="grid-3">
+                <span class="header2">header</span>
+                <span class="main-content">main-content</span>
+                <span class="sidebar2">sidebar2</span>
+                <span class="twin1">twin</span>
+                <span class="twin2">twin2</span>
+                <span class="footer2">footer</span>
             </div>
             
         </div>
