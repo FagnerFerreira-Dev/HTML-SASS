@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    body{
+        padding-top: 100px;
+    }
+    main{
+        margin: auto;
+        max-width: 600px;
+    }
+
+    div{
+        gap: 5px;
+        text-align: center;
+        margin-block: 50px;
+    }
+
+    .grid-1{
+        border: solid 1px black;
+        display: grid;
+        grid-template-columns: 1fr 110px 1fr;
+        grid-template-rows: 60px 120px 60px ;
+        row-gap: 50px;
+        padding-block: 50px;
+    }
+
+
+    span{
+        background-color: aqua;
+    }
+
+    .grid-2{
+        display: grid;
+        grid-template-areas: 
+        "header header header"
+        "siderbar content1 content1"
+        "siderbar content2 content3"
+        "footer footer footer";
+
+        grid-template-columns: repeat(3, 1fr);
+        grid-template-rows: 30px 100px 100px 30px;
+    }
+
+    .header{
+        grid-area: header;
+    }
+
+    .content1{
+        grid-area: content1;
+    }
+
+    .siderbar{
+        grid-area: siderbar;
+    }
+
+    .content2{
+        grid-area: content2;
+    }
+
+    .content3{
+        grid-area: content3;
+    }
+
+    .footer{
+        grid-area: footer;
+    }
+
+</style>
+<body>
+    
+    <main>
+
+        <div class="container">
+            Grid 1
+            <div class="grid-1">
+                <span>1</span>
+                <span>2</span>
+                <span>3</span>
+                <span>4</span>
+                <span>5</span>
+                <span>5</span>
+                <span>5</span>
+                <span>5</span>
+                <span>5</span>
+            </div>
+        </div>
+
+        <div class="container2">
+            Grid 2
+            <div class="grid-2">
+                <span class="header">header</span>
+                <span class="siderbar">siderar</span>
+                <span class="content1">content1</span>
+                <span class="content2">content2</span>
+                <span class="content3">content3</span>
+                <span class="footer">footer</span>
+            </div>
+            
+        </div>
+
+    </main>
+
+
+</body>
+</html>
