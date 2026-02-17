@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    body{
+        padding: 100px;
+    }
+
+    .grid-1{
+        border: solid 1px;
+        display: grid;
+/* 
+        height: 500px;
+        width: 800px; */
+        gap: 10px;
+
+        /* grid-template-columns: 100px 100px 100px;
+        grid-template-rows: 50px 100px 100px 50px; */
+
+        justify-content: center;
+        grid-template:
+        "header header header" 50px 
+        "sidebar content1 content1" 100px
+        "sidebar content2 content3" 100px
+        "footer footer footer" 50px
+        / 100px 100px 100px
+        ;
+    }
+
+
+    .el1{
+        grid-area: header;
+    }
+
+    .el2{
+        grid-area: sidebar;
+    }
+
+    .el3{
+        grid-area: content1;
+    }
+
+    .el4{
+        grid-area: content2;
+    }
+
+    .el5{
+        grid-area: content3;
+    }
+    
+    .el6{
+        grid-area: footer;
+    }
+
+
+
+    div{
+        background-color: cadetblue;
+    }
+</style>
+<body>
+    <h1>treino</h1>
+    <section class="grid-1">
+        <div class="el1">el1</div>
+        <div class="el2">el2</div>
+        <div class="el3">el3</div>
+        <div class="el4">el4</div>
+        <div class="el5">el5</div>
+        <div class="el6">el6</div>
+    </section>
+</body>
+</html>

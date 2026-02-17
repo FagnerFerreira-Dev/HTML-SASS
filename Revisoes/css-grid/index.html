@@ -23,8 +23,7 @@
     .grid-1{
         border: solid 1px black;
         display: grid;
-        grid-template-columns: 1fr 110px 1fr;
-        grid-template-rows: 60px 120px 60px ;
+        grid-template: 60px 120px 60px / 1fr 110px 1fr;
         row-gap: 50px;
         padding-block: 50px;
     }
@@ -36,14 +35,25 @@
 
     .grid-2{
         display: grid;
+
+        
         grid-template-areas: 
         "header header header"
-        "siderbar content1 content1"
-        "siderbar content2 content3"
+        "sidebar content1 content1"
+        "sidebar content2 content3"
         "footer footer footer";
 
         grid-template-columns: repeat(3, 1fr);
         grid-template-rows: 30px 100px 100px 30px;
+
+
+        grid-template: 
+            "header header header" 30px
+            "sidebar content1 content1" 100px
+            "sidebar content2 content3" 100px
+            "footer footer footer"  30px 
+            / repeat(3, 1fr);        
+
     }
 
     .header{
@@ -54,8 +64,8 @@
         grid-area: content1;
     }
 
-    .siderbar{
-        grid-area: siderbar;
+    .sidebar{
+        grid-area: sidebar;
     }
 
     .content2{
@@ -141,7 +151,7 @@
             Grid 2
             <div class="grid-2">
                 <span class="header">header</span>
-                <span class="siderbar">siderar</span>
+                <span class="sidebar">siderar</span>
                 <span class="content1">content1</span>
                 <span class="content2">content2</span>
                 <span class="content3">content3</span>
