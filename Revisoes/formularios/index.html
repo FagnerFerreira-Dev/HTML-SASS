@@ -12,6 +12,39 @@
         width: 300px;
         gap: 10px;
     }
+
+    input[type="email"]{
+        outline: nome;
+        appearance: none;
+
+    }
+
+    input[type="file"]{
+        display: none;
+    }
+
+    label[for="file"]{
+        width: 100px;
+        height: 100px;
+        background-color: rgb(126, 126, 126);
+        color: white;
+        cursor: pointer;
+        text-align: center;
+        box-sizing: border-box;
+        padding-block: 39px;
+    }
+
+    select{
+        text-decoration: none;
+        appearance: none;
+        background-color: aliceblue;
+        padding-left: 100px;
+    }
+
+    option{
+        background-color: black;
+        color: white;
+    }
     
     </style>
 </head>
@@ -26,13 +59,19 @@
             <label for="email"> adicione email</label>
             <input type="email" name="email" id="email" maxlength="10">
 
-
-            <input type="file" name="arquivo" id="">
+            <label for="file">Adcione foto</label>
+            <input type="file" name="arquivo" id="file">
 
             <input type="radio" name="radio" id="">
 
+            <select name="select" id="select">
+                <option value="comer"> comer</option>
+                <option value="comer"> beber</option>
+                <option value="comer"> deitar</option>
+                <option value="comer"> dormir</option>
+            </select>
+            <input type="submit" value="eviar" id>
 
-            <input type="submit" value="eviar">
         </form>
     </main>
     
